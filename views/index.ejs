@@ -13,6 +13,14 @@
         <li>Item #1</li>
         <li>Item #2</li>
         <li>Item #3</li>
+        <% for (i=0; i<newItems.length; i++) { %>
+            <li><%= newItems[i] %></li>
+        <% } %>
     </ul>
+
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit">Add</button>
+    </form>
 </body>
 </html>
